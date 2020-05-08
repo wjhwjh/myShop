@@ -51,6 +51,51 @@ router-link to
 axios数据请求
 
 
+2020/5/8
+
+新闻列表，没有数据，只能写死数据
+
+使用export和import导出和导入数据，目前最常见的使用的地方就是vue中
+
+import两种形式
+
+import 路径
+
+import 名 from 路径
+
+
+
+-----------------------------------------
+window安装了vcCode,以及一些插件
+
+window下的常用的快捷键
+
+Ctrl+ /  切换注释
+
+shift+alt+f 格式化代码
+
+shift+ctrl+n 新建窗口
+
+Ctrl+shift+w 关闭窗口
+
+ctrl+f 查找
+
+ctrl+H 替换
+
+-----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

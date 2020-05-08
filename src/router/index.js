@@ -16,6 +16,7 @@ const Search = () =>
     import ('@/components/search/search.vue');
 const News = () =>
     import ('@/components/News/newList.vue');
+const NewsDetail = ()=>import('@/components/News/newsDetail.vue');    
 
 Vue.use(Router)
 
@@ -57,6 +58,11 @@ export default new Router({
             path: '/newsList',
             name: 'newsList',
             component: News
+        },
+        {
+            path: '/newsDetail',
+            name: 'newsDetail',
+            component: NewsDetail
         }
     ]
 })

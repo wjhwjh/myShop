@@ -1,7 +1,6 @@
 <template>
   <div>
     <headNav title="首页"></headNav>
-
     <!-- 轮播图 -->
     <div>
       <mt-swipe :auto="4000" class="banner">
@@ -11,6 +10,7 @@
         </mt-swipe-item>
       </mt-swipe>
     </div>
+    
     <!-- 九宫格 -->
     <ul class="list">
       <li v-for="(list, index) in listSource" :key="index">

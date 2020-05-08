@@ -8,7 +8,8 @@ import mint from 'mint-ui'
 import 'mint-ui/lib/style.css' // css需要单独引入
 
 
-// assets中的文件是以模块形式的引入的
+// assets中的文件是以模块形式的引入全局的css和js,在js文件并没有导出
+// 使用import直接引入
 import '@/assets/style/main.css'
 import '@/assets/js/base.js'
 

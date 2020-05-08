@@ -2,10 +2,11 @@
   <div id="app">
     <router-view />
     <!-- table 切换  -->
+     
     <mt-tabbar v-model="selected" fixed>
       <mt-tab-item id="home">
         <img slot="icon" src="./assets/img/home.png" />
-        首页
+           首页
       </mt-tab-item>
       <mt-tab-item id="vip">
         <img slot="icon" src="./assets/img/VIP.png" />
@@ -50,9 +51,6 @@ export default {
 </script>
 
 <style>
-body {
-  /* height: 10000px; */
-}
 .banner {
   height: 200px;
   border-bottom: 1px solid #fafafa;
