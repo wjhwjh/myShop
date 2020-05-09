@@ -93,7 +93,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
-  padding: 0 15px;
 }
 .list li {
   width: 33.33%;
@@ -110,6 +109,6 @@ export default {
 .list li a p {
   font-size: 14px;
   color: #222;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 </style>

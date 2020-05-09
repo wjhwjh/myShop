@@ -6,6 +6,8 @@ import router from './router'
 import Axios from 'axios'
 import mint from 'mint-ui'
 import 'mint-ui/lib/style.css' // css需要单独引入
+import moment from 'moment' 
+
 
 
 // assets中的文件是以模块形式的引入全局的css和js,在js文件并没有导出
@@ -28,8 +30,14 @@ Vue.use(mint)
 
 // 导航全局组件
 import headNav from './components/headNav/headNav.vue'
+import data from './components/News/data'
 Vue.component('headNav', headNav);
 
+
+// 全局过滤器,格式化时间
+Vue.filter('timeFilter', function(date, formatStr){
+  return moment(date).format(formatStr)
+});
 
 
 

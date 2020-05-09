@@ -6,11 +6,17 @@
       <!-- {{
             dataSource
       }}-->
+
+     
+     <!-- YYYY-MM-DD 中文下年月日，与每个的位数相对，moment函数对传入的日期值进行处理
+       是现有的库，可以拿来直接使用
+     -->
+
       <li v-for="(item, index) in dataSource" :key="index">
         <img :src="item.imgUrl" alt />
         <router-link :to="{name:'newsDetail', params:{id:item.id}}">
           <h2>{{item.title}}</h2>
-          <p>{{item.create_date}}</p>
+          <p>{{item.top_time | timeFilter("YYYY-MM-DD")}}</p>
         </router-link>
       </li>
     </ul>

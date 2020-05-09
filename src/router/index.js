@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import vueRouter from 'vue-router'
 //import HelloWorld from '@/components/HelloWorld'
 
 //在路由配置中当component的属性是回调函数，返回由import引入的组件，便是路由懒加载也就是按需加载
@@ -18,17 +18,20 @@ const News = () =>
     import ('@/components/News/newList.vue');
 const NewsDetail = ()=>import('@/components/News/newsDetail.vue');    
 
-Vue.use(Router)
+Vue.use(vueRouter)
 
 
-const originalPush = Router.prototype.push
-Router.prototype.push = function push(location, onResolve, onReject) {
+const originalPush = vueRouter.prototype.push
+vueRouter.prototype.push = function push(location, onResolve, onReject) {
     if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
     return originalPush.call(this, location).catch(err => err)
 }
 
 
-export default new Router({
+
+
+let router = new vueRouter({
+    linkActiveClass:'tabActive',
     // 路由匹配
     routes: [{
             path: '/',
@@ -66,3 +69,7 @@ export default new Router({
         }
     ]
 })
+
+
+
+export default router
