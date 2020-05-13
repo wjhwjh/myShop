@@ -16,7 +16,12 @@ const Search = () =>
     import ('@/components/search/search.vue');
 const News = () =>
     import ('@/components/News/newList.vue');
-const NewsDetail = ()=>import('@/components/News/newsDetail.vue');    
+const NewsDetail = () =>
+    import ('@/components/News/newsDetail.vue');
+
+
+const PhotoList = () =>
+    import ('@/components/photo/photoList.vue');
 
 Vue.use(vueRouter)
 
@@ -31,7 +36,7 @@ vueRouter.prototype.push = function push(location, onResolve, onReject) {
 
 
 let router = new vueRouter({
-    linkActiveClass:'tabActive',
+    linkActiveClass: 'tabActive',
     // 路由匹配
     routes: [{
             path: '/',
@@ -63,10 +68,16 @@ let router = new vueRouter({
             component: News
         },
         {
-            path: '/newsDetail',
+            path: '/newsDetail/:id',
             name: 'newsDetail',
             component: NewsDetail
+        },
+        {
+            path: '/photo/list',
+            name: 'photo.list',
+            component: PhotoList,
         }
+
     ]
 })
 

@@ -6,7 +6,7 @@ import router from './router'
 import Axios from 'axios'
 import mint from 'mint-ui'
 import 'mint-ui/lib/style.css' // css需要单独引入
-import moment from 'moment' 
+import moment from 'moment'
 
 
 
@@ -33,10 +33,12 @@ import headNav from './components/headNav/headNav.vue'
 import data from './components/News/data'
 Vue.component('headNav', headNav);
 
+import navBar from './components/common/navBar.vue'
+Vue.component('navBar', navBar)
 
 // 全局过滤器,格式化时间
-Vue.filter('timeFilter', function(date, formatStr){
-  return moment(date).format(formatStr)
+Vue.filter('timeFilter', function(date, formatStr) {
+    return moment(date).format(formatStr)
 });
 
 
