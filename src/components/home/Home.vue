@@ -1,6 +1,6 @@
 <template>
   <div>
-    <headNav title="首页"></headNav>
+  
     <!-- 轮播图 -->
     <div>
       <mt-swipe :auto="4000" class="banner">
@@ -44,7 +44,7 @@ let listSource = [
   {
     url: share,
     title: "图文分享",
-    router: { name: "photo.list" }
+    router: { name: "photo.list", params:{showId:'show'+'='+0}}
   },
   {
     url: goods,

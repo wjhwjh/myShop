@@ -1,7 +1,7 @@
 <template>
   <div>
-    <headNav title="新闻列表"></headNav>
-    <navBar title="新闻详情"></navBar>
+    <!-- <headNav title="新闻列表"></headNav> -->
+    <!-- <navBar title="新闻详情"></navBar> -->
     <div class="content">
       
 <h3>{{dataContent.title}}</h3>
@@ -23,7 +23,8 @@ export default {
     };
   },
   created() {
-    let id = this.$route.params.id;
+    console.log(this.$route)
+    let id = this.$route.query.id;
     this.dataContent = this.dataDetail.filter(item => item.id == id)[0];
   }
 };

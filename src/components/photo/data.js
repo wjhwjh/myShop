@@ -6,6 +6,7 @@ const dataPhotoList = [{
         time: '2020-05-01',
         timeLength: '104分钟',
         from: '美国',
+        showId:'7',
     },
     {
         id: '2',
@@ -15,6 +16,7 @@ const dataPhotoList = [{
         time: '2019-11-29',
         timeLength: '130分钟',
         from: '美国',
+        showId:'7',
     },
     {
         id: '3',
@@ -24,6 +26,7 @@ const dataPhotoList = [{
         time: '2019-12-13',
         timeLength: '112分钟',
         from: '中国大陆',
+        showId:'7',
     },
     {
         id: '4',
@@ -33,10 +36,162 @@ const dataPhotoList = [{
         time: '2019-05-15',
         timeLength: '104分钟',
         from: '法国',
+        showId:'7',
+    },
+
+    {
+        id: '5',
+        content: '刚从瑟堡来的斯蒂芬，加入了巴黎93省圣德尼的“反犯罪特种部队”。在这里，他遇到了新队友克里斯和瓦达，两位经验丰富的警察。但他很快就感受到了这个街区不同帮派间剑拔弩张的紧张氛围。在一次出警的行动中，局面变得不可控制，而这个事件意外地被一架无人机记录下来，进而引发了更为剧烈的冲突。',
+        title: '悲惨世界 Les misérables (2019)',
+        imgurl: '../../../static/img/5.jpg',
+        time: '2019-05-15',
+        timeLength: '104分钟',
+        from: '法国',
+        showId:'7',
+    },
+    {
+        id: '6',
+        content: '刚从瑟堡来的斯蒂芬，加入了巴黎93省圣德尼的“反犯罪特种部队”。在这里，他遇到了新队友克里斯和瓦达，两位经验丰富的警察。但他很快就感受到了这个街区不同帮派间剑拔弩张的紧张氛围。在一次出警的行动中，局面变得不可控制，而这个事件意外地被一架无人机记录下来，进而引发了更为剧烈的冲突。',
+        title: '悲惨世界 Les misérables (2019)',
+        imgurl: '../../../static/img/6.jpg',
+        time: '2019-05-15',
+        timeLength: '104分钟',
+        from: '法国',
+        showId:'7',
+    },
+    {
+        id: '7',
+        content: '刚从瑟堡来的斯蒂芬，加入了巴黎93省圣德尼的“反犯罪特种部队”。在这里，他遇到了新队友克里斯和瓦达，两位经验丰富的警察。但他很快就感受到了这个街区不同帮派间剑拔弩张的紧张氛围。在一次出警的行动中，局面变得不可控制，而这个事件意外地被一架无人机记录下来，进而引发了更为剧烈的冲突。',
+        title: '悲惨世界 Les misérables (2019)',
+        imgurl: '../../../static/img/1.jpg',
+        time: '2019-05-15',
+        timeLength: '104分钟',
+        from: '法国',
+        showId:'2',
+    },
+    {
+        id: '8',
+        content: '刚从瑟堡来的斯蒂芬，加入了巴黎93省圣德尼的“反犯罪特种部队”。在这里，他遇到了新队友克里斯和瓦达，两位经验丰富的警察。但他很快就感受到了这个街区不同帮派间剑拔弩张的紧张氛围。在一次出警的行动中，局面变得不可控制，而这个事件意外地被一架无人机记录下来，进而引发了更为剧烈的冲突。',
+        title: '悲惨世界 Les misérables (2019)',
+        imgurl: '../../../static/img/2.jpg',
+        time: '2019-05-15',
+        timeLength: '104分钟',
+        from: '法国',
+        showId:'2',
+    },
+    
+    
+];
+
+
+
+const photoNav=[
+    {
+        showId:'1',
+        navName:'全部'
+    },
+    {
+        showId:'2',
+        navName:'冷门佳片'
+    },
+    {
+        showId:'3',
+        navName:'华语'
+    },
+    {
+        showId:'4',
+        navName:'欧美'
+    },
+    {
+        showId:'5',
+        navName:'韩国'
+    },
+    {
+        showId:'6',
+        navName:'日本'
+    },
+    {
+        showId:'7',
+        navName:'美国'
+    },
+    {
+        showId:'8',
+        navName:'中国大陆'
+    },
+    {
+        showId:'9',
+        nav:'泰国'
+    },
+]
+
+
+
+
+
+const dataPhotoDetail = [
+    {
+        id:'1',
+
+
     },
 ];
 
 
+const dataPhotoDetailImg = [
+    {
+        id:'1',
+        imgUrlBig:[
+            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
+            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
+            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
+            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+        ],
+    },
+    {
+
+        id:'2',
+        imgUrlBig:[
+            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
+            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
+            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
+            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+        ],
+    },
+    {
+
+        id:'3',
+        imgUrlBig:[
+            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
+            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
+            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
+            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+        ],
+    },
+    {
+
+        id:'4',
+        imgUrlBig:[
+            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
+            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
+            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
+            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+        ],
+    },
+
+
+]
+
+
 export {
-    dataPhotoList
+    dataPhotoList,
+    dataPhotoDetailImg,
+    photoNav
 };

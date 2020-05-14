@@ -1,6 +1,6 @@
 <template>
   <div>
-    <headNav title="新闻列表"></headNav>
+    <!-- <headNav title="新闻列表"></headNav> -->
 
     <ul class="newsWrap">
       <!-- {{
@@ -14,7 +14,7 @@
 
       <li v-for="(item, index) in dataSource" :key="index">
         <img :src="item.imgUrl" alt />
-        <router-link :to="{name:'newsDetail', params:{id:item.id}}">
+        <router-link :to="{name:'newsDetail', query:{id:item.id}}">
           <h2>{{item.title}}</h2>
           <p>{{item.top_time | timeFilter("YYYY-MM-DD")}}</p>
         </router-link>
@@ -26,7 +26,7 @@
 <script>
 import data from "./data.js";
 
-console.log("静态数据--", data);
+//console.log("静态数据--", data);
 
 export default {
   name: "newList",

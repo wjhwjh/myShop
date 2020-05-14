@@ -23,6 +23,9 @@ const NewsDetail = () =>
 const PhotoList = () =>
     import ('@/components/photo/photoList.vue');
 
+    const PhotoDetail= () =>
+    import ('@/components/photo/photoDetail.vue');    
+
 Vue.use(vueRouter)
 
 
@@ -68,14 +71,19 @@ let router = new vueRouter({
             component: News
         },
         {
-            path: '/newsDetail/:id',
+            path: '/newsDetail',
             name: 'newsDetail',
             component: NewsDetail
         },
         {
-            path: '/photo/list',
+            path: '/photo/list/:showId',
             name: 'photo.list',
             component: PhotoList,
+        },
+        {
+            path:'/photo/detail',
+            name:'photo.detail',
+            component:PhotoDetail,
         }
 
     ]

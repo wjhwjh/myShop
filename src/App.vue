@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+      <headNav title="首页"></headNav>
     <router-view />
     <!-- table 切换  -->
 
@@ -23,8 +24,8 @@
     </mt-tabbar>-->
 
     <ul class="tabBar">
-      <li v-for="(item, index) in tabBar" :key="index">
-        <router-link :to="item.route"  exact>
+      <li v-for="(item, index) in tabBar" :key="index" >
+        <router-link :to="item.route" exact @click.native="changeHash(index)" :class="{'tabActive': index==currentIndex}">
           <img :src="item.icon" />
           <p>{{item.title}}</p>
         </router-link>
@@ -55,8 +56,15 @@ export default {
   data() {
     return {
       tabBar,
-      selected: ""
+      selected: "",
+      currentIndex:0
     };
+  },
+
+  methods:{
+  changeHash(index){
+     this.currentIndex = index;
+    }
   },
   created() {},
   mounted() {
