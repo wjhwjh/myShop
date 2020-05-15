@@ -44,7 +44,7 @@ let listSource = [
   {
     url: share,
     title: "图文分享",
-    router: { name: "photo.list", params:{showId:'show'+'='+0}}
+    router: { name: "photo.list", params:{showId:1}}
   },
   {
     url: goods,

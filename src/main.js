@@ -8,7 +8,7 @@ import mint from 'mint-ui'
 import 'mint-ui/lib/style.css' // css需要单独引入
 import moment from 'moment'
 
-
+import { Toast } from 'mint-ui'
 
 // assets中的文件是以模块形式的引入全局的css和js,在js文件并没有导出
 // 使用import直接引入
@@ -26,6 +26,8 @@ Vue.prototype.$Axios = Axios;
 
 // 挂载mint
 Vue.use(mint)
+ // mint-ui里totast不是全局变量，需要单独引入
+Vue.prototype.$toast = Toast;
 
 
 // 导航全局组件

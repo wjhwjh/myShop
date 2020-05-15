@@ -35,20 +35,47 @@ export default {
     };
   },
   created() {},
-  mounted() {},
+  mounted() {
+
+    console.log('全局的--',this.$toast);
+  },
   methods: {
     handelNav(index, showId) {
       //console.log(showId);
       this.currentIndex = index;
-      this.$router.push({name:'photo.list',params:{showId:'show'+'='+showId}})
+      this.$router.push({name:'photo.list',params:{showId:showId}})
 
-      if (showId == "1") {
+    
+    }
+  },
+  beforeRouteUpdate(to,from, next){
+    //console.log('路由守卫--',to);
+    let paramsId = to.params.showId;
+
+    // 路由更新的时请求数据，数据驱动视图的更新
+    if (paramsId == 1) {
         this.dataPhoto = dataPhotoList;
       } else {
-        this.dataPhoto = dataPhotoList.filter(item => item.showId == showId);
+        this.dataPhoto = dataPhotoList.filter(item => item.showId == paramsId);
       }
-    }
+    if(this.dataPhoto.length==0){
+      this.$toast({
+        message: '没有数据', 
+        duration: 1000 , //持续时间（毫秒），若为 -1 则不会自动关闭
+        // iconClass: 'icon icon-success', //icon 图标的类名
+      });
+    }  
+     next();
+  },
+  beforeRouteEnter(to,from, next){
+    //console.log('首次进入路由--',to);
+    
+     next(vm => {
+       vm.dataPhoto = dataPhotoList;
+     })
+     next();
   }
+
 };
 </script>
 <style lang="css" scoped>
