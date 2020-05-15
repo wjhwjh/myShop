@@ -10,7 +10,7 @@
 
     <ul class="listUl">
       <li v-for="(item, index) in dataPhoto" :key="index">
-        <router-link :to="{name:'photo.detail', params:{id:item.id}}">
+        <router-link :to="{name:'photo.detail', query:{id:item.id}}">
           <img :src="item.imgurl" alt />
           <div class="des">
             <p>{{item.title}}</p>
@@ -36,46 +36,48 @@ export default {
   },
   created() {},
   mounted() {
-
-    console.log('全局的--',this.$toast);
   },
   methods: {
     handelNav(index, showId) {
       //console.log(showId);
       this.currentIndex = index;
-      this.$router.push({name:'photo.list',params:{showId:showId}})
-
-    
-    }
-  },
-  beforeRouteUpdate(to,from, next){
-    //console.log('路由守卫--',to);
-    let paramsId = to.params.showId;
-
-    // 路由更新的时请求数据，数据驱动视图的更新
-    if (paramsId == 1) {
+      this.$router.push({ name: "photo.list", params: { showId: showId } });
+    },
+    getPhotoData(paramsId) {
+      // 路由更新的时请求数据，数据驱动视图的更新
+      if (paramsId == 1) {
         this.dataPhoto = dataPhotoList;
       } else {
         this.dataPhoto = dataPhotoList.filter(item => item.showId == paramsId);
       }
-    if(this.dataPhoto.length==0){
-      this.$toast({
-        message: '没有数据', 
-        duration: 1000 , //持续时间（毫秒），若为 -1 则不会自动关闭
-        // iconClass: 'icon icon-success', //icon 图标的类名
-      });
-    }  
-     next();
-  },
-  beforeRouteEnter(to,from, next){
-    //console.log('首次进入路由--',to);
-    
-     next(vm => {
-       vm.dataPhoto = dataPhotoList;
-     })
-     next();
-  }
 
+      if (this.dataPhoto.length == 0) {
+        this.$toast({
+          message: "没有数据",
+          duration: 1000 //持续时间（毫秒），若为 -1 则不会自动关闭
+          // iconClass: 'icon icon-success', //icon 图标的类名
+        });
+      }
+    }
+  },
+  beforeRouteUpdate(to, from, next) {
+    //console.log('路由守卫--',to);
+    let paramsId = to.params.showId;
+    this.getPhotoData(paramsId);
+
+    next();
+  },
+  beforeRouteEnter(to, from, next) {
+    //console.log('首次进入路由--',to);
+
+    next(vm => {
+      let paramsId = to.params.showId;
+      vm.getPhotoData(paramsId);
+      vm.currentIndex =  paramsId*1-1;
+      //vm.dataPhoto = dataPhotoList;
+    });
+    next();
+  }
 };
 </script>
 <style lang="css" scoped>

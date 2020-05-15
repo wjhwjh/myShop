@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <headNav title="新闻列表"></headNav> -->
-    <!-- <navBar title="新闻详情"></navBar> -->
+    <navBar title="新闻详情"></navBar>
     <div class="content">
       
 <h3>{{dataContent.title}}</h3>
