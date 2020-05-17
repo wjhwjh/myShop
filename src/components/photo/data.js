@@ -6,7 +6,7 @@ const dataPhotoList = [{
         time: '2020-05-01',
         timeLength: '104分钟',
         from: '美国',
-        showId:'7',
+        showId: '7',
     },
     {
         id: '2',
@@ -16,7 +16,7 @@ const dataPhotoList = [{
         time: '2019-11-29',
         timeLength: '130分钟',
         from: '美国',
-        showId:'7',
+        showId: '7',
     },
     {
         id: '3',
@@ -26,7 +26,7 @@ const dataPhotoList = [{
         time: '2019-12-13',
         timeLength: '112分钟',
         from: '中国大陆',
-        showId:'7',
+        showId: '7',
     },
     {
         id: '4',
@@ -36,7 +36,7 @@ const dataPhotoList = [{
         time: '2019-05-15',
         timeLength: '104分钟',
         from: '法国',
-        showId:'7',
+        showId: '7',
     },
 
     {
@@ -47,7 +47,7 @@ const dataPhotoList = [{
         time: '2019-05-15',
         timeLength: '104分钟',
         from: '法国',
-        showId:'7',
+        showId: '7',
     },
     {
         id: '6',
@@ -57,7 +57,7 @@ const dataPhotoList = [{
         time: '2019-05-15',
         timeLength: '104分钟',
         from: '法国',
-        showId:'7',
+        showId: '7',
     },
     {
         id: '7',
@@ -67,7 +67,7 @@ const dataPhotoList = [{
         time: '2019-05-15',
         timeLength: '104分钟',
         from: '法国',
-        showId:'2',
+        showId: '2',
     },
     {
         id: '8',
@@ -77,50 +77,49 @@ const dataPhotoList = [{
         time: '2019-05-15',
         timeLength: '104分钟',
         from: '法国',
-        showId:'2',
+        showId: '2',
     },
-    
-    
+
+
 ];
 
 
 
-const photoNav=[
-    {
-        showId:'1',
-        navName:'全部'
+const photoNav = [{
+        showId: '1',
+        navName: '全部'
     },
     {
-        showId:'2',
-        navName:'冷门佳片'
+        showId: '2',
+        navName: '冷门佳片'
     },
     {
-        showId:'3',
-        navName:'华语'
+        showId: '3',
+        navName: '华语'
     },
     {
-        showId:'4',
-        navName:'欧美'
+        showId: '4',
+        navName: '欧美'
     },
     {
-        showId:'5',
-        navName:'韩国'
+        showId: '5',
+        navName: '韩国'
     },
     {
-        showId:'6',
-        navName:'日本'
+        showId: '6',
+        navName: '日本'
     },
     {
-        showId:'7',
-        navName:'美国'
+        showId: '7',
+        navName: '美国'
     },
     {
-        showId:'8',
-        navName:'中国大陆'
+        showId: '8',
+        navName: '中国大陆'
     },
     {
-        showId:'9',
-        nav:'泰国'
+        showId: '9',
+        nav: '泰国'
     },
 ]
 
@@ -128,19 +127,28 @@ const photoNav=[
 
 
 
-const dataPhotoDetail = [
-    {
-        id:'1',
+const dataPhotoDetail = [{
+    id: '1',
 
 
+}, ];
+
+
+const dataPhotoDetailImg = [{
+        id: '1',
+        imgUrlBig: [
+            '../../../static/img/photo1.jpg',
+            '../../../static/img/photo2.jpg',
+            '../../../static/img/photo3.jpg',
+            '../../../static/img/photo4.jpg',
+            '../../../static/img/photo5.jpg',
+            '../../../static/img/photo6.jpg'
+        ],
     },
-];
-
-
-const dataPhotoDetailImg = [
     {
-        id:'1',
-        imgUrlBig:[
+
+        id: '2',
+        imgUrlBig: [
             'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
             'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
             'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
@@ -151,8 +159,8 @@ const dataPhotoDetailImg = [
     },
     {
 
-        id:'2',
-        imgUrlBig:[
+        id: '3',
+        imgUrlBig: [
             'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
             'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
             'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
@@ -163,20 +171,8 @@ const dataPhotoDetailImg = [
     },
     {
 
-        id:'3',
-        imgUrlBig:[
-            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
-            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
-        ],
-    },
-    {
-
-        id:'4',
-        imgUrlBig:[
+        id: '4',
+        imgUrlBig: [
             'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
             'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
             'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
