@@ -10,23 +10,23 @@
         </p>
       </div>
       <p class="des">{{dataPhotoCurrent.content}}</p>
-      <ul class="img-wrap">
-        <li v-for="(item, idx) in dataPhotoArray" :key="idx">
+      <!-- <ul class="img-wrap">
+        <li v-for="(item, idx) in dataPhotoArray" :key="idx"> -->
           <!-- img 一定要闭合标签，不然渲染就不会成功 -->
-          <img :src="item" alt width="100%" height="auto" />
+          <!-- <img :src="item" alt width="100%" height="auto" />
         </li>
-      </ul>
+      </ul> -->
+      <vue-preview :slides="thumbsList" class="imgPrev"></vue-preview>
     </div>
   </div>
 </template>
 <script>
 import { dataPhotoList, dataPhotoDetailImg } from "./data.js";
-
 export default {
   data() {
     return {
-      dataPhotoArray: [],
-      dataPhotoCurrent: {}
+      dataPhotoCurrent: {},
+      thumbsList:[],
     };
   },
   mounted() {},
@@ -36,11 +36,25 @@ export default {
     let queryId = this.$route.query.id;
     let dataPhotoImg = {};
     dataPhotoImg = dataPhotoDetailImg.filter(item => item.id == queryId)[0];
-    this.dataPhotoArray = dataPhotoImg["imgUrlBig"];
+ 
     //console.log("判断是否是数组", this.dataPhotoArray instanceof Array);
     //当前列表数据
     this.dataPhotoCurrent = dataPhotoList.filter(item => item.id == queryId)[0];
-    console.log("当前数据", this.dataPhotoCurrent);
+    //console.log("当前数据", this.dataPhotoCurrent);
+    
+    // 处理图片
+    dataPhotoImg["imgUrlBig"].forEach(item => {
+      this.thumbsList.push({
+        src:item,
+        msrc:item,
+        w:600,
+        h:800
+      });
+
+     // console.log('虚空虚假',  this.thumbsList);
+});
+
+
   },
   methods: {}
 };
@@ -84,4 +98,6 @@ export default {
   padding-top: 15px;
   padding-bottom: 10px;
 }
+
+
 </style>

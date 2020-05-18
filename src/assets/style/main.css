@@ -28,3 +28,20 @@ a {
 p,div,span,h1,h2,h3,h3,h4{
     line-height: 1;
 }
+
+/* 
+ 这里是vue-preview的样式，
+ vue-preview是一个组件，在嵌套的组件的style里使用scoped只供当前组件DOM使用，
+ 所以组件里嵌套的组件的样式要么写在全局，要么写到对应的组件中。
+
+ 这里涉及了组件样式的作用域问题
+*/
+img[itemprop="thumbnail"]{
+    width: 100%;
+    height: auto;
+}
+.my-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-gallery figure{  flex: 0 1 33.33%;   padding: 5px;}

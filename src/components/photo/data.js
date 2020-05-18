@@ -142,7 +142,9 @@ const dataPhotoDetailImg = [{
             'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
             'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
             'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
+            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
         ],
     },
     {
@@ -154,6 +156,7 @@ const dataPhotoDetailImg = [{
             'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
             'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
             'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
+            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp',
             'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
         ],
     },

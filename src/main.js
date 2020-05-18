@@ -10,6 +10,9 @@ import moment from 'moment'
 
 import { Toast } from 'mint-ui'
 
+import VuePreview from 'vue-preview'
+
+
 // assets中的文件是以模块形式的引入全局的css和js,在js文件并没有导出
 // 使用import直接引入
 import '@/assets/style/main.css'
@@ -29,7 +32,9 @@ Vue.use(mint)
  // mint-ui里totast不是全局变量，需要单独引入
 Vue.prototype.$toast = Toast;
 
-
+// 挂载VuePreview
+Vue.use(VuePreview)
+ 
 // 导航全局组件
 import headNav from './components/headNav/headNav.vue'
 import data from './components/News/data'
