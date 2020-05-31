@@ -18,6 +18,13 @@
       </ul> -->
       <vue-preview :slides="thumbsList" class="imgPrev"></vue-preview>
     </div>
+     <!-- <div>{{$route.query.id}}</div> -->
+     
+     <!-- 
+        在template模版中可以直接使用$route.query.id获取路由query中的id;
+        作为父组件传递给子组件的参数
+      -->
+    <Comment :cid="$route.query.id" />
   </div>
 </template>
 <script>

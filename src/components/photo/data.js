@@ -137,99 +137,96 @@ const dataPhotoDetail = [{
 const dataPhotoDetailImg = [{
         id: '1',
         imgUrlBig: [
-            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
-            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
+            '../../../static/img/photo1.jpg',
+            '../../../static/img/photo2.jpg',
+            '../../../static/img/photo3.jpg',
+            '../../../static/img/photo4.jpg',
+            '../../../static/img/photo5.jpg',
+            '../../../static/img/photo6.jpg',
         ],
     },
     {
 
         id: '2',
         imgUrlBig: [
-            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
-            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+            '../../../static/img/photo1.jpg',
+            '../../../static/img/photo2.jpg',
+            '../../../static/img/photo3.jpg',
+            '../../../static/img/photo4.jpg',
+            '../../../static/img/photo5.jpg',
+            '../../../static/img/photo6.jpg',
         ],
     },
     {
 
         id: '3',
         imgUrlBig: [
-            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
-            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+            '../../../static/img/photo1.jpg',
+            '../../../static/img/photo2.jpg',
+            '../../../static/img/photo3.jpg',
+            '../../../static/img/photo4.jpg',
+            '../../../static/img/photo5.jpg',
+            '../../../static/img/photo6.jpg',
         ],
     },
     {
 
         id: '4',
         imgUrlBig: [
-            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
-            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+            '../../../static/img/photo1.jpg',
+            '../../../static/img/photo2.jpg',
+            '../../../static/img/photo3.jpg',
+            '../../../static/img/photo4.jpg',
+            '../../../static/img/photo5.jpg',
+            '../../../static/img/photo6.jpg',
         ],
     },
     {
 
         id: '5',
         imgUrlBig: [
-            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
-            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+            '../../../static/img/photo1.jpg',
+            '../../../static/img/photo2.jpg',
+            '../../../static/img/photo3.jpg',
+            '../../../static/img/photo4.jpg',
+            '../../../static/img/photo5.jpg',
+            '../../../static/img/photo6.jpg',
         ],
     },
     {
 
         id: '6',
         imgUrlBig: [
-            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
-            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+            '../../../static/img/photo1.jpg',
+            '../../../static/img/photo2.jpg',
+            '../../../static/img/photo3.jpg',
+            '../../../static/img/photo4.jpg',
+            '../../../static/img/photo5.jpg',
+            '../../../static/img/photo6.jpg',
         ],
     },
     {
 
         id: '7',
         imgUrlBig: [
-            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
-            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+            '../../../static/img/photo1.jpg',
+            '../../../static/img/photo2.jpg',
+            '../../../static/img/photo3.jpg',
+            '../../../static/img/photo4.jpg',
+            '../../../static/img/photo5.jpg',
+            '../../../static/img/photo6.jpg',
         ],
     },
     {
 
         id: '8',
         imgUrlBig: [
-            'https://img3.doubanio.com/view/photo/m/public/p2576090251.webp',
-            'https://img9.doubanio.com/view/photo/m/public/p2575864385.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2577442100.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2574259049.webp',
-            'https://img1.doubanio.com/view/photo/m/public/p2578619867.webp',
-            'https://img3.doubanio.com/view/photo/m/public/p2575373020.webp'
+            '../../../static/img/photo1.jpg',
+            '../../../static/img/photo2.jpg',
+            '../../../static/img/photo3.jpg',
+            '../../../static/img/photo4.jpg',
+            '../../../static/img/photo5.jpg',
+            '../../../static/img/photo6.jpg',
         ],
     },
 ]

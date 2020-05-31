@@ -29,19 +29,24 @@ Vue.prototype.$Axios = Axios;
 
 // 挂载mint
 Vue.use(mint)
- // mint-ui里totast不是全局变量，需要单独引入
+    // mint-ui里totast不是全局变量，需要单独引入
 Vue.prototype.$toast = Toast;
 
 // 挂载VuePreview
 Vue.use(VuePreview)
- 
+
 // 导航全局组件
 import headNav from './components/headNav/headNav.vue'
-import data from './components/News/data'
 Vue.component('headNav', headNav);
 
 import navBar from './components/common/navBar.vue'
 Vue.component('navBar', navBar)
+
+// 挂载全局评论组建
+import Comment from './components/common/comment'
+Vue.component('Comment', Comment)
+
+
 
 // 全局过滤器,格式化时间
 Vue.filter('timeFilter', function(date, formatStr) {
